@@ -1,0 +1,67 @@
+    //returns digit in number
+void digits(uint8_t num){
+while (num!=0){
+    num /= 10;
+    i++;}
+uint8_t count = i;
+if (count>3){
+//overload
+}
+else {
+for(i=0; i<count; i++){
+uint8_t digit = x%10;
+delay(10);
+x = (int(x/10));
+displayDigits(x);}//end for
+} // end_else 
+    }
+
+    uint8_t asciiToInt (uint8_t num){
+    uint8_t result= (x-96)/2;
+    return result;}
+
+/**
+if (input!=NO_KEY){ //on pressed
+    if(present!=true){
+        x = x + input;
+        int l = x.length();
+lcd.clear();
+lcd.print("You entered: ");
+lcd.setCursor(2,1);
+lcd.print(x);
+displayDigits(input);
+    }
+
+    else{
+        y = y + input;
+        int l = y.length();
+     
+    }}//end-if
+
+//operator + and -
+else if(present == false && (input!=NO_KEY) && (input=='A'||input=='B')){
+    if(present == false){
+        present=true;
+        operate=input;
+        lcd.print(operate);
+    }
+}
+
+//clear and display
+else if(last == true && (input!=NO_KEY) && (input == 'C')){
+    if(operate == 'A'){
+        result = x.toInt() + y.toInt();}
+    else if (operate == 'B'){
+        result = x.toInt() - y.toInt();
+    }
+}
+
+else if((input!=NO_KEY) && input=='D'){
+    lcd.clear();
+    present = false;
+    x = "";
+    y = "";
+    result = 0;
+    operate = '\0';
+}
+*/
